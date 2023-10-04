@@ -13,8 +13,10 @@ public class EnemyMovement : MonoBehaviour
     private Transform target;
     private int pathIndex = 0;
 
+    private PathFinder pathFinder;
+
     private void Start() { 
-        target = PathFinder.main.path[pathIndex];
+        target = pathFinder.path[pathIndex];
     }
 
     private void Update()
@@ -23,7 +25,7 @@ public class EnemyMovement : MonoBehaviour
         {
             pathIndex++;
 
-            if (pathIndex == PathFinder.main.path.Length)
+            if (pathIndex == pathFinder.path.Length)
             {
                 EnemySpawner.onEnemyDestroy.Invoke(); 
                 Destroy(gameObject);
@@ -31,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
             }
             else
             {
-                target = PathFinder.main.path[pathIndex]; 
+                target = pathFinder.path[pathIndex]; 
             }
         }
     }
@@ -41,5 +43,9 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.velocity = direction * movespeed;
+    }
+
+    public void SetPathFinderInstance(PathFinder pathFinder) {
+        this.pathFinder = pathFinder;
     }
 }

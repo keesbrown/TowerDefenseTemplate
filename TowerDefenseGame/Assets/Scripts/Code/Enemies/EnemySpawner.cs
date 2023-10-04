@@ -23,6 +23,8 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesLefToSpawn;
     private bool isSpawning = false;
 
+    [SerializeField] private PathFinder pathFinder;
+
     private void Awake()
     {
         onEnemyDestroy.AddListener(EnemyDestroyed);
@@ -77,7 +79,8 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemy() 
     {
         GameObject prefabToSpawn = enemyPrefabs[0];
-        Instantiate(prefabToSpawn, PathFinder.main.startPoint.position, Quaternion.identity);
+        GameObject instantiatedEnemy = Instantiate(prefabToSpawn, pathFinder.startPoint.position, Quaternion.identity);
+        instantiatedEnemy.GetComponent<EnemyMovement>().SetPathFinderInstance(pathFinder);
     }
 
 
