@@ -13,9 +13,11 @@ public class EnemyMovement : MonoBehaviour
     private Transform target;
     private int pathIndex = 0;
 
+    PLayerHealth Health;
     private PathFinder pathFinder;
 
     private void Start() { 
+        Health = FindObjectOfType<PLayerHealth>();
         target = pathFinder.path[pathIndex];
     }
 
@@ -28,6 +30,7 @@ public class EnemyMovement : MonoBehaviour
             if (pathIndex == pathFinder.path.Length)
             {
                 EnemySpawner.onEnemyDestroy.Invoke(); 
+                Health.TakeDamage(20);
                 Destroy(gameObject);
                 return;
             }
