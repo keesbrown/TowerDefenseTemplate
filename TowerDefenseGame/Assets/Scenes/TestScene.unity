@@ -3950,6 +3950,7 @@ GameObject:
   - component: {fileID: 1587737364}
   - component: {fileID: 1587737365}
   - component: {fileID: 1587737366}
+  - component: {fileID: 1587737367}
   m_Layer: 0
   m_Name: Pathfinder
   m_TagString: Untagged
@@ -4015,6 +4016,20 @@ MonoBehaviour:
   timeBetweenWaves: 2
   difficultyScalingFactor: 1.5
   pathFinder: {fileID: 1587737365}
+--- !u!114 &1587737367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587737363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc4b87a84ce5ff4f861cfaea223c636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerPrefabs:
+  - {fileID: 7057717065179583543, guid: 680dd7757aa3f5444b7b3c45d143f09d, type: 3}
 --- !u!1 &1603384955
 GameObject:
   m_ObjectHideFlags: 0
