@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class Test : MonoBehaviour // BuildManager
 {
     public static  Test main;
 
@@ -10,6 +10,13 @@ public class Test : MonoBehaviour
     [SerializeField] private GameObject[] towerPrefabs;
 
     private int selectedTower = 0;
+
+    public void IncreaseCurrency(int amount)
+    {
+        currency += amount;
+    } 
+    
+    public int currency;
     private void Awake()
     {
         main = this;

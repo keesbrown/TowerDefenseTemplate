@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class Tiles : MonoBehaviour
+public class Tiles : MonoBehaviour // PLot
 {
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
