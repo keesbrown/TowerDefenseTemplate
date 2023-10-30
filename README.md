@@ -10,7 +10,7 @@ In mijn TowerDefense game zou je kunnen kiezen tussen vier vershillende levels. 
 ## Product 1: "DRY SRP Scripts op GitHub"
 
 In mijn script *Turret* heb ik vooral SRP. De script heeft meerdere functies maar ze gaan allemaal om de turret. het zorgt er voor dat de turrets enemies kunnen target, de time delay tussen bullets en de range van de turret. Ik vind het ook DRY want als ik een nieuwe turret zou willen maken bijvoorbeeld een sniper. zou ik alleen de bovenste drie moeten aanpassen.
-[link naar script](/MyTowerDefenseGame/Assets/Scripts/Code/Turret.cs)"*
+[link naar script](TowerDefenseGame/Assets/Scripts/Code/Towers/Turret.cs)"*
 
 ## Product 2: "Projectmappen op GitHub"
  Dit is de [ROOT](/TowerDefenseGame) folder van mijn unity project.
