@@ -8,6 +8,7 @@ public class Test : MonoBehaviour // BuildManager
 
     [Header("References")]
     [SerializeField] private GameObject[] towerPrefabs;
+    //[SerializeField] private Tower[] towers; 
 
     private int selectedTower = 0;
 
