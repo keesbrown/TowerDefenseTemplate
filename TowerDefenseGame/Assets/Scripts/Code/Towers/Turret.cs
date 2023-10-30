@@ -81,10 +81,6 @@ public class Turret : MonoBehaviour
         turretRotationPoint.rotation = Quaternion.Lerp(turretRotationPoint.rotation, targetRotation, Time.deltaTime * rotationSpeed);
     }
 
-    private void OnDrawGizmoSelected()
-    {
-        Handles.color = Color.cyan;
-        Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
-    }
+    
 
 }

@@ -16,17 +16,11 @@ In mijn script *Turret* heb ik vooral SRP. De script heeft meerdere functies maa
  Dit is de [ROOT](/TowerDefenseGame) folder van mijn unity project.
 ## Product 3: Build op Github
 
-Je maakt in Unity een stabiele “build” van je game waarbij bugs en logs eerst zijn verwijderd. Deze buildfiles upload je in je repository onder releases.  Bij eventuele afwijkingen moeten deze worden gedocumenteerd in de release. (Bijv controller nodig of spelen via netwerk etc..) 
-
-[Release Voorbeeld](https://github.com/erwinhenraat/TowerDefenseTemplate/releases)
+[Release Voorbeeld](https://github.com/keesbrown/TowerDefenseTemplate/releases/tag/v1)
 
 ## Product 4: Game met Sprites(animations) en Textures 
 
-De build van je game bevat textures, sprites en sprite animations(bijv particles) die op de juiste manier zijn gebruikt en zorgen voor een goede afwerking van je game.  
-
-Plaats in je readme een animated gif van je gameplay (+- 10 sec.) waarin de implementatie van je textures en sprites goed te zien is.
-
-![Textures Sprites](readmeVisuals/texturesSprites.gif)
+![Level one gameplay](kreesTowerDefense.gif)
 
 ## Product 5: Issues met debug screenshots op GitHub 
 
