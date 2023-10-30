@@ -1,31 +1,19 @@
 # TowerDefenseTemplate
 Dit is een template wat door jullie te gebruiken is voor het juist inleveren van alle producten voor de Towerdefense beroepsopdracht. **Verwijder uiteindelijk de template teksten!**
 
-Begin met een korte omschrijving van je towerdefense game en hoe deze werkt. Plaats ook een paar screenshots.
+In mijn TowerDefense game zou je kunnen kiezen tussen vier vershillende levels. Level 1 zou kort zijn met 1 pad, soort tower, enemie en je zou maar kort moeten overleven. Level 2, 3 en 4 zouden dan elke moeilijker zijn. met het simple idee van 1 extra pad, tower, enemie en je zou langer moeten overleven.
 
-![not really my game](https://cdn.akamai.steamstatic.com/steam/apps/246420/ss_aaaf33cdb9106bd0801a36049516d95c6f2352b0.600x338.jpg?t=1686321490)
 
-![also not](https://cdn.akamai.steamstatic.com/steam/apps/960090/ss_900d7c00d45ff2a258d4c8d59ee47f7f04854c37.600x338.jpg?t=1686097340)
-
+![Startscreen](<readmeVisuals/Screenshot 2023-10-30 135936.png>)
+![Level one](<readmeVisuals/Screenshot 2023-10-30 140237.png>)
 
 ## Product 1: "DRY SRP Scripts op GitHub"
 
-Plaats hier minimaal 1 link naar scripts die voldoen aan de eisen van **"Don't Repeat Yourself (DRY)"** en **"Single Responsibility Principle"**.
-Omschrijf hier waarom jij denkt dat je in die scripts aan deze eisen voldoet.
-
-Bijvoorbeeld:
-
-*"In dit script heb ik een array gebruikt voor al mijn vijanden die in de nieuwe wave worden gespawnd. Hierdoor heb ik mijzelf niet hoeven herhalen **(DRY)** in de code omdat ik met 1 regel alle enemies kan plaatsen via en for each loop.
-[link naar script](/MyTowerDefenseGame/Assets/Scripts/JustAScript.cs)"*
+In mijn script *Turret* heb ik vooral SRP. De script heeft meerdere functies maar ze gaan allemaal om de turret. het zorgt er voor dat de turrets enemies kunnen target, de time delay tussen bullets en de range van de turret. Ik vind het ook DRY want als ik een nieuwe turret zou willen maken bijvoorbeeld een sniper. zou ik alleen de bovenste drie moeten aanpassen.
+[link naar script](/MyTowerDefenseGame/Assets/Scripts/Code/Turret.cs)"*
 
 ## Product 2: "Projectmappen op GitHub"
-
-Je commit de mappenstructuur van je unity project op github en verwijst vanuit je readme naar de root map van je project. Met een netjes en goed gestructureerde mappenstructuur en benamingen van files toon je aan dat je dit leerdoel beheerst. 
-
-Dit is de [ROOT](/MyTowerDefenseGame/) folder van mijn unity project.
-
-Zorg dat deze verwijst naar je Develop branch.
-
+ Dit is de [ROOT](/TowerDefenseGame) folder van mijn unity project.
 ## Product 3: Build op Github
 
 Je maakt in Unity een stabiele “build” van je game waarbij bugs en logs eerst zijn verwijderd. Deze buildfiles upload je in je repository onder releases.  Bij eventuele afwijkingen moeten deze worden gedocumenteerd in de release. (Bijv controller nodig of spelen via netwerk etc..) 
